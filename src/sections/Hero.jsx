@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-scroll-parallax'
+import profileImage from '../assets/profile.png'
 
 const roles = [
   'AI/ML Developer',
@@ -157,7 +158,7 @@ export default function Hero() {
             <div className="relative w-full max-w-[320px] mx-auto">
               <div className="overflow-hidden rounded-[2rem] border border-accent/20 bg-[#081014] shadow-[0_30px_80px_rgba(0,245,196,0.12)]">
                 <img
-                  src="/src/assets/profile.png"
+                  src={profileImage}
                   alt="Sailaja Bevara"
                   className="w-full h-full object-cover"
                 />

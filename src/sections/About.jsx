@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useScrollAnimation } from '../components/useScrollAnimation'
+import profileImage from '../assets/profile.png'
 
 const highlights = [
   { icon: '🎓', label: 'B.Tech AI/ML', sub: 'Aditya College, 2023–2027' },
@@ -49,7 +50,7 @@ export default function About() {
             <div className="relative mb-10">
               <div className="w-48 h-48 rounded-2xl overflow-hidden border-2 border-accent/20">
                 <img
-                  src="/src/assets/profile.png"
+                  src={profileImage}
                   alt="Sailaja Bevara"
                   className="w-full h-full object-cover"
                   onError={(e) => {
